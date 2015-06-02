@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="documentación de AzarCloud - 1.0.0" href="../index.html"/>
-        <link rel="next" title="La nube de OpenShift (PAAS)" href="../openshift/openshift.html"/>
+        <link rel="next" title="La nube de OpenShift (PAAS)" href="../amazon/amazon.html"/>
         <link rel="prev" title="AzarCloud" href="../index.html"/> 
 
   
@@ -75,10 +75,37 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="">Introducción</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#que-es-cloud-computing">¿Qué es Cloud Computing?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tipos-de-cloud">Tipos de Cloud</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#iaas">IAAS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#paas">PAAS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#saas">SAAS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#otros">Otros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iaas">IAAS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#aws">AWS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digitalocean">DigitalOcean</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#paas">PAAS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#openshift">OpenShift</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#saas">SAAS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#github">GitHub</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../amazon/amazon.html">Amazon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../amazon/amazon.html#que-es-openshift">¿Qué es Openshift?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../amazon/amazon.html#que-ofrece">¿Qué ofrece?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../amazon/amazon.html#comercial">Comercial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../amazon/amazon.html#libre-educacion">Libre/Educación</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../azure/azure.html">Azure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../azure/azure.html#que-es-openshift">¿Qué es Openshift?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../azure/azure.html#que-ofrece">¿Qué ofrece?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../azure/azure.html#comercial">Comercial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../azure/azure.html#libre-educacion">Libre/Educación</a></li>
 </ul>
 </li>
 </ul>
@@ -137,22 +164,45 @@
 <h1>Introducción al Cloud Computing<a class="headerlink" href="#introduccion-al-cloud-computing" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="que-es-cloud-computing">
 <h2>¿Qué es Cloud Computing?<a class="headerlink" href="#que-es-cloud-computing" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Para decirlo claro y rápido: Cloud es Internet y Compunting es Informática. La computación en la nube (Cloud Compunting) es un término genérico que se aplica a todo aquello que involucra ofrecer un servicio desde Internet. Estos servicios se dividen generalmente en tres categorías: Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) y Software-as-a-Service (SaaS). El nombre lo inspiró el símbolo que se usa generalmente para representar Internet en los diagramas.</p>
+<p>Para decirlo claro y rápido: Cloud es Internet y Compunting es Informática. La computación en la nube (Cloud Compunting) es un término genérico que se aplica a todo aquello que involucra ofrecer un servicio desde Internet. Estos servicios se dividen generalmente en tres categorías: <strong>Infrastructure-as-a-Service (IaaS)</strong>, <strong>Platform-as-a-Service (PaaS)</strong> y <strong>Software-as-a-Service (SaaS)</strong>. El nombre lo inspiró el símbolo que se usa generalmente para representar Internet en los diagramas.</p>
 </div>
 <div class="section" id="tipos-de-cloud">
 <h2>Tipos de Cloud<a class="headerlink" href="#tipos-de-cloud" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la imagen se representan las categorías en que generalmente se clasifican los sevicios Cloud.</p>
 <a class="reference internal image-reference" href="../_images/cloud.png"><img alt="../_images/cloud.png" src="../_images/cloud.png" style="width: 643.5px; height: 414.0px;" /></a>
 <div class="section" id="iaas">
 <h3>IAAS<a class="headerlink" href="#iaas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La infraestructura como servicio es lo más parecido a tener una máquina virtual pero sin necesidad de gestionar la infraestructura subyacente, es decir, el sistema de virtualización y todo lo que conlleva (sistema operativo, red, almacenamiento, etc.).</p>
+<div class="section" id="aws">
+<h4>AWS<a class="headerlink" href="#aws" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Amazon Web Services (AWS) es el conjunto de todos los servicios en Nube de Amazon. Los más importantes, dentro de AWS, son <em>Amazon Elastic Compute Cloud</em> (EC2, las máquinas virtuales) y <em>Amazon S3</em> (almacenamiento, por ejemplo usado por Dropbox).
+&#8211;&gt; En estado de petición.</p>
+</div>
+<div class="section" id="digitalocean">
+<h4>DigitalOcean<a class="headerlink" href="#digitalocean" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Servicios en Nube tipo IAAS. Tenemos 100$ gratis para estudiantes si se obtiene el Student Pack de GitHub. Inconveniente es que hay que hacerse una cuenta (tarjeta).</p>
+</div>
 </div>
 <div class="section" id="paas">
 <h3>PAAS<a class="headerlink" href="#paas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los PAAS están pensados para suministrar la plataforma, es decir, una máquina virtual preconfigurada para un tipo de aplicación. Son la plataforma por excelencia para desarrolladores.
+Un ejemplo:
+1. Tengo una aplicación hecha en PHP.
+2. Creo una instancia (en cada servidor tiene un nombre) de máquina para esa aplicación (ya tiene el apache, php, módulos, mysql si es necesarios,...)
+3. Subo la aplicación a esa instancia, con algo de configuración para el sercicio concreto, y la aplicación estará funcionando.
+4. Sale un parche de seguridad &#8220;0-day&#8221; para Apache &#8211;&gt; no me preocupa, el PAAS hará la actualización del Apache para que todo siga funcionando perfectamente.
+5. La &#8220;máquina&#8221; se queda corta, la amplío &#8211;&gt; tanto Apache como MySQL se adaptarán a los nuevos parámetros de RAM, por ejemplo.</p>
+<div class="section" id="openshift">
+<h4>OpenShift<a class="headerlink" href="#openshift" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Es la Nube de RedHat.</p>
+</div>
 </div>
 <div class="section" id="saas">
 <h3>SAAS<a class="headerlink" href="#saas" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="github">
+<h4>GitHub<a class="headerlink" href="#github" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Es el servicio por excelencia para albergar repositorios de código. Usa es software de control de versiones GIT.</p>
 </div>
-<div class="section" id="otros">
-<h3>Otros<a class="headerlink" href="#otros" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
 </div>
 </div>
@@ -163,7 +213,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../openshift/openshift.html" class="btn btn-neutral float-right" title="La nube de OpenShift (PAAS)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../amazon/amazon.html" class="btn btn-neutral float-right" title="La nube de OpenShift (PAAS)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral" title="AzarCloud" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
